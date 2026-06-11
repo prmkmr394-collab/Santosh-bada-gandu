@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+/* Custom Utilities */
+.glass-panel {
+  background: rgba(10, 31, 68, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #FFFFFF 0%, #93C5FD 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-electric-gradient {
+  background: linear-gradient(135deg, #2D7FF9 0%, #60A5FA 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Circuit Board SVG Background Motif */
+.circuit-bg {
+  background-image: radial-gradient(rgba(45, 127, 249, 0.1) 1.5px, transparent 1.5px),
+                    radial-gradient(rgba(45, 127, 249, 0.05) 1px, transparent 1px);
+  background-size: 24px 24px;
+  background-position: 0 0, 12px 12px;
+}
+
+.circuit-pattern {
+  background-color: #0A1F44;
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(45, 127, 249, 0.15) 0%, transparent 40%),
+    radial-gradient(circle at 80% 70%, rgba(96, 165, 250, 0.1) 0%, transparent 50%),
+    linear-gradient(rgba(10, 31, 68, 0.95), rgba(5, 18, 41, 0.98));
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0A1F44;
+}
+::-webkit-scrollbar-thumb {
+  background: #2D7FF9;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #60A5FA;
+}
