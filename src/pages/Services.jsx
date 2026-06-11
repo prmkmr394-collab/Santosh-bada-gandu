@@ -15,7 +15,7 @@ export default function Services({ setCurrentPage }) {
         'Rapid time-to-hire (average 48-72 hours)',
         'Scale down or ramp up workforce with zero headcount liabilities',
         'Easily access highly specialized skills for one-off projects',
-        'Complete administrative burden shifted to Circuit Sphere'
+        'Complete administrative burden shifted to CircuitSphere Solutions'
       ],
       scenario: 'Best for software deployment, product launches, seasonal audits, or leave coverage.'
     },
@@ -63,7 +63,7 @@ export default function Services({ setCurrentPage }) {
       icon: <Users className="w-8 h-8 text-electric" />,
       title: 'Managed Workforce Services (MSP)',
       tagline: 'Optimize vendor networks, control costs, ensure compliance.',
-      description: 'We act as the primary operational governor for your contingent workforce. Circuit Sphere integrates all staffing agencies, automates vendor billing, and standardizes rate cards to optimize performance and reduce compliance exposure.',
+      description: 'We act as the primary operational governor for your contingent workforce. CircuitSphere Solutions integrates all staffing agencies, automates vendor billing, and standardizes rate cards to optimize performance and reduce compliance exposure.',
       bullets: [
         'Vendor Management System (VMS) integration support',
         'Coordinated supplier governance and consolidated invoicing',
@@ -89,7 +89,7 @@ export default function Services({ setCurrentPage }) {
       icon: <Shield className="w-8 h-8 text-electric" />,
       title: 'Employer of Record & Payroll Services',
       tagline: 'Offload administrative liability and compliance risks.',
-      description: 'Let us handle the complexity of compliance, local taxes, benefits, and insurance. Circuit Sphere operates as the Employer of Record (EOR) for your designated contractors or payroll candidates.',
+      description: 'Let us handle the complexity of compliance, local taxes, benefits, and insurance. CircuitSphere Solutions operates as the Employer of Record (EOR) for your designated contractors or payroll candidates.',
       bullets: [
         'W-2 and 1099 contractor compliance management',
         'Comprehensive multi-state payroll administration',
@@ -146,7 +146,7 @@ export default function Services({ setCurrentPage }) {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
           <h1 className="text-4xl sm:text-5xl font-extrabold mb-4">Our Services & Solutions</h1>
           <p className="text-lg text-slate-300 max-w-3xl mx-auto">
-            Circuit Sphere provides the talent infrastructure, operational systems, and strategic alignment to build resilient teams and optimize enterprise productivity.
+            CircuitSphere Solutions provides the talent infrastructure, operational systems, and strategic alignment to build resilient teams and optimize enterprise productivity.
           </p>
         </div>
       </section>

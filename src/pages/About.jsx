@@ -25,53 +25,30 @@ export default function About({ setCurrentPage }) {
     }
   ]
 
-  const timeline = [
-    {
-      year: '2020',
-      title: 'Circuit Sphere Founded',
-      description: 'Launched in New York City with a core focus on technical contract staffing and developer placements.'
-    },
-    {
-      year: '2022',
-      title: 'MSP Program Launch',
-      description: 'Expanded capabilities to deliver full Managed Service Provider (MSP) and vendor consolidation programs for mid-market clients.'
-    },
-    {
-      year: '2024',
-      title: 'Global Delivery Model & Pods',
-      description: 'Introduced pre-vetted tech POD squads and multi-state compliance payroll operations across the US and Canada.'
-    },
-    {
-      year: '2026',
-      title: '500+ Active Professionals',
-      description: 'Deploying workforce solutions across IT, BFSI, Healthcare, Retail, and Manufacturing, servicing Fortune 500 enterprises.'
-    }
-  ]
-
   const leaders = [
     {
-      name: 'Jonathan Sterling',
-      role: 'Chief Executive Officer & Founder',
-      bio: 'Over 18 years of executive leadership in contingent workforce solutions, vendor management, and enterprise staffing programs.',
-      initials: 'JS'
+      name: 'Santosh Kumar C',
+      role: 'Founder & CEO',
+      bio: '11 Years of experience in consulting and staffing recruitment.',
+      initials: 'SC'
     },
     {
-      name: 'Dr. Evelyn Martinez',
-      role: 'Chief Operations Officer',
-      bio: 'Former HR operations director at Apex Healthcare. Evelyn governs our employer of record (EOR) and labor compliance divisions.',
-      initials: 'EM'
+      name: 'Rashmi',
+      role: 'Co-Founder',
+      bio: '8 years of experience in recruitment and operations.',
+      initials: 'R'
     },
     {
-      name: 'Devon Vance',
-      role: 'VP of Enterprise Client Success',
-      bio: 'Supervises MSP SLA fulfillment, rate optimization plans, and custom supplier consolidation strategies for corporate clients.',
-      initials: 'DV'
+      name: 'Suresh Kumar',
+      role: 'CTO',
+      bio: '10 years of experience in AI and Automation technology.',
+      initials: 'SK'
     },
     {
-      name: 'Alina Rostova',
-      role: 'Director of Technical Talent Sourcing',
-      bio: 'Oversees our developer vetting pipeline, technical interview screening, and custom agile POD squads creation.',
-      initials: 'AR'
+      name: 'Chintan Patel',
+      role: 'COO',
+      bio: '10 Years of technical and operational experience.',
+      initials: 'CP'
     }
   ]
 
@@ -81,7 +58,7 @@ export default function About({ setCurrentPage }) {
       <section className="bg-navy text-white py-16 relative overflow-hidden">
         <div className="absolute inset-0 opacity-15 pointer-events-none circuit-bg"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-          <h1 className="text-4xl sm:text-5xl font-extrabold mb-4">About Circuit Sphere</h1>
+          <h1 className="text-4xl sm:text-5xl font-extrabold mb-4">About CircuitSphere Solutions</h1>
           <p className="text-lg text-slate-300 max-w-3xl mx-auto">
             Connecting world-class enterprises with specialized contingent and managed workforce talent infrastructure.
           </p>
@@ -153,34 +130,7 @@ export default function About({ setCurrentPage }) {
         </div>
       </section>
 
-      {/* Company Story Timeline */}
-      <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-20">
-            <h2 className="text-3xl font-bold text-navy tracking-tight">Milestones of Growth</h2>
-            <div className="h-1.5 w-16 bg-electric mx-auto my-3 rounded-full"></div>
-            <p className="text-slate-600 text-sm">
-              From a boutique technical staffing agency to a comprehensive enterprise managed service provider.
-            </p>
-          </div>
 
-          <div className="relative border-l-2 border-slate-200 max-w-3xl mx-auto pl-8 sm:pl-12 space-y-12">
-            {timeline.map((item, idx) => (
-              <div key={idx} className="relative">
-                {/* Timeline dot */}
-                <div className="absolute -left-12 sm:-left-[60px] top-1.5 w-8 h-8 rounded-full bg-white border-4 border-electric flex items-center justify-center z-10 shadow">
-                  <div className="w-2.5 h-2.5 rounded-full bg-navy"></div>
-                </div>
-                <div className="space-y-2">
-                  <span className="text-lg font-extrabold text-electric leading-none">{item.year}</span>
-                  <h3 className="text-xl font-bold text-navy">{item.title}</h3>
-                  <p className="text-slate-600 text-sm leading-relaxed">{item.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Leadership Team Placeholder */}
       <section className="py-24 bg-slate-50">

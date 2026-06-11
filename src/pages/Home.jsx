@@ -6,48 +6,7 @@ import {
 } from 'lucide-react'
 
 export default function Home({ setCurrentPage }) {
-  // Testimonials Slider State
-  const [activeTestimonial, setActiveTestimonial] = useState(0)
 
-  const testimonials = [
-    {
-      quote: "Circuit Sphere transformed our contingent staffing program. Their MSP solution brought transparency, slashed time-to-fill by 40%, and significantly raised candidate quality.",
-      author: "Sarah Jenkins",
-      role: "VP of Talent Acquisition",
-      company: "Apex Tech Group",
-      rating: 5
-    },
-    {
-      quote: "Managing compliance and payroll for over 200 contract developers was a logistical nightmare until we outsourced to Circuit Sphere. Their payroll & compliance team is exceptional.",
-      author: "Marcus Vance",
-      role: "Director of HR & Operations",
-      company: "Nova Financial",
-      rating: 5
-    },
-    {
-      quote: "The POD model proposed by Circuit Sphere allowed us to deploy a fully functional agile development squad in less than two weeks. Exceptional technical expertise and support.",
-      author: "Elena Rostova",
-      role: "Chief Technology Officer",
-      company: "Vanguard Health Systems",
-      rating: 5
-    }
-  ]
-
-  const nextTestimonial = () => {
-    setActiveTestimonial((prev) => (prev + 1) % testimonials.length)
-  }
-
-  const prevTestimonial = () => {
-    setActiveTestimonial((prev) => (prev - 1 + testimonials.length) % testimonials.length)
-  }
-
-  // Auto-play Testimonials
-  useEffect(() => {
-    const interval = setInterval(() => {
-      nextTestimonial()
-    }, 6000)
-    return () => clearInterval(interval)
-  }, [])
 
   return (
     <div className="w-full">
@@ -74,10 +33,10 @@ export default function Home({ setCurrentPage }) {
                 <span>Next-Gen Workforce Solutions</span>
               </div>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
-                Powering Businesses with the <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-electric-light">Right Workforce</span>
+                Connecting People, <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-electric-light">Empowering Success</span>
               </h1>
               <p className="text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0">
-                Circuit Sphere is an industry-leading Managed Service Provider (MSP) and strategic consulting firm. We deploy highly skilled professionals, manage contingent talent pools, and streamline recruiting operations to propel your enterprise forward.
+                CircuitSphere Solutions is an industry-leading Managed Service Provider (MSP) and strategic consulting firm. We deploy highly skilled professionals, manage contingent talent pools, and streamline recruiting operations to propel your enterprise forward.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
                 <button
@@ -116,28 +75,7 @@ export default function Home({ setCurrentPage }) {
         </div>
       </section>
 
-      {/* Trust Bar */}
-      <section className="bg-slate-100 py-10 border-y border-slate-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="text-center text-xs font-semibold text-slate-500 uppercase tracking-widest mb-6">
-            Trusted by enterprises across IT, Healthcare, Finance & Manufacturing
-          </p>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 items-center justify-items-center opacity-65 grayscale hover:grayscale-0 transition-all duration-300">
-            <div className="text-xl font-bold tracking-tight text-slate-600 font-sans flex items-center space-x-1">
-              <Laptop className="w-5 h-5 text-electric" /><span>NEXUS TECH</span>
-            </div>
-            <div className="text-xl font-bold tracking-tight text-slate-600 font-sans flex items-center space-x-1">
-              <Banknote className="w-5 h-5 text-electric" /><span>VANGUARD SEC</span>
-            </div>
-            <div className="text-xl font-bold tracking-tight text-slate-600 font-sans flex items-center space-x-1">
-              <Activity className="w-5 h-5 text-electric" /><span>APEX HEALTH</span>
-            </div>
-            <div className="text-xl font-bold tracking-tight text-slate-600 font-sans flex items-center space-x-1">
-              <Factory className="w-5 h-5 text-electric" /><span>ORION IND</span>
-            </div>
-          </div>
-        </div>
-      </section>
+
 
       {/* Services Overview */}
       <section className="py-24 bg-white">
@@ -148,7 +86,7 @@ export default function Home({ setCurrentPage }) {
             </h2>
             <div className="h-1.5 w-20 bg-electric mx-auto my-4 rounded-full"></div>
             <p className="text-base text-slate-600">
-              Circuit Sphere supplies the resources and governance required to build high-performing teams, lower operational risk, and reduce administrative burdens.
+              CircuitSphere Solutions supplies the resources and governance required to build high-performing teams, lower operational risk, and reduce administrative burdens.
             </p>
           </div>
 
@@ -253,7 +191,7 @@ export default function Home({ setCurrentPage }) {
               </h2>
               <div className="h-1.5 w-16 bg-electric rounded-full"></div>
               <p className="text-slate-300">
-                Circuit Sphere stands at the intersection of business strategy and talent density. We help organisations manage dynamic demand patterns and mitigate compliance pitfalls with speed and flexibility.
+                CircuitSphere Solutions stands at the intersection of business strategy and talent density. We help organisations manage dynamic demand patterns and mitigate compliance pitfalls with speed and flexibility.
               </p>
               <button onClick={() => setCurrentPage('about')} className="px-6 py-3 bg-white/10 hover:bg-white/15 text-white border border-white/20 hover:border-white/40 font-semibold rounded-lg transition-all flex items-center space-x-2">
                 <span>Our Core Story</span>
@@ -267,7 +205,7 @@ export default function Home({ setCurrentPage }) {
                 <div className="text-sm uppercase tracking-wider text-slate-300 font-semibold">Professionals Deployed</div>
               </div>
               <div className="p-8 rounded-2xl bg-white/5 border border-white/10 text-center hover:bg-white/10 transition-colors">
-                <div className="text-4xl sm:text-5xl font-extrabold text-electric mb-2">50+</div>
+                <div className="text-4xl sm:text-5xl font-extrabold text-electric mb-2">10+</div>
                 <div className="text-sm uppercase tracking-wider text-slate-300 font-semibold">Enterprise Clients</div>
               </div>
               <div className="p-8 rounded-2xl bg-white/5 border border-white/10 text-center hover:bg-white/10 transition-colors">
@@ -292,7 +230,7 @@ export default function Home({ setCurrentPage }) {
             </h2>
             <div className="h-1.5 w-20 bg-electric mx-auto my-4 rounded-full"></div>
             <p className="text-base text-slate-600">
-              Deploying expert professionals shouldn't be complex. Circuit Sphere has fine-tuned a repeatable methodology designed to go from initial gap definition to fully compliant worker onboarding rapidly.
+              Deploying expert professionals shouldn't be complex. CircuitSphere Solutions has fine-tuned a repeatable methodology designed to go from initial gap definition to fully compliant worker onboarding rapidly.
             </p>
           </div>
 
@@ -359,14 +297,13 @@ export default function Home({ setCurrentPage }) {
               { icon: <Laptop className="w-6 h-6" />, label: 'IT & Software' },
               { icon: <Banknote className="w-6 h-6" />, label: 'BFSI' },
               { icon: <Activity className="w-6 h-6" />, label: 'Healthcare' },
-              { icon: <ShoppingBag className="w-6 h-6" />, label: 'Retail & E-Com' },
+              { icon: <Users className="w-6 h-6" />, label: 'BPO' },
               { icon: <Factory className="w-6 h-6" />, label: 'Manufacturing' },
               { icon: <Radio className="w-6 h-6" />, label: 'Telecom' }
             ].map((ind, index) => (
               <div 
                 key={index}
-                onClick={() => setCurrentPage('industries')}
-                className="p-6 rounded-2xl bg-slate-50 border border-slate-200/60 text-center hover:border-electric hover:bg-white hover:shadow-lg transition-all duration-300 cursor-pointer group"
+                className="p-6 rounded-2xl bg-slate-50 border border-slate-200/60 text-center hover:border-electric hover:bg-white hover:shadow-lg transition-all duration-300 group"
               >
                 <div className="w-12 h-12 rounded-xl bg-navy/5 text-navy mx-auto flex items-center justify-center mb-4 group-hover:bg-electric group-hover:text-white transition-colors">
                   {ind.icon}
@@ -378,62 +315,7 @@ export default function Home({ setCurrentPage }) {
         </div>
       </section>
 
-      {/* Testimonials Carousel */}
-      <section className="py-24 bg-slate-900 text-white relative overflow-hidden">
-        <div className="absolute inset-0 opacity-15 pointer-events-none circuit-bg"></div>
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold tracking-tight text-white font-sans">Client Voices</h2>
-            <div className="h-1 w-12 bg-electric mx-auto mt-3 rounded-full"></div>
-          </div>
 
-          <div className="relative bg-white/5 border border-white/10 rounded-3xl p-8 sm:p-12 backdrop-blur-sm min-h-[300px] flex flex-col justify-between">
-            <div className="absolute top-8 left-8 text-electric/25 pointer-events-none">
-              <Quote className="w-16 h-16 transform -rotate-180" />
-            </div>
-
-            <div className="relative space-y-6 z-10">
-              <div className="flex space-x-1 justify-center sm:justify-start">
-                {[...Array(testimonials[activeTestimonial].rating)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 fill-electric text-electric" />
-                ))}
-              </div>
-
-              <blockquote className="text-lg sm:text-xl font-medium leading-relaxed text-slate-100">
-                "{testimonials[activeTestimonial].quote}"
-              </blockquote>
-
-              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between pt-6 border-t border-white/10 gap-4">
-                <div>
-                  <cite className="not-italic font-bold text-white text-base block">
-                    {testimonials[activeTestimonial].author}
-                  </cite>
-                  <span className="text-sm text-slate-400">
-                    {testimonials[activeTestimonial].role}, <span className="text-electric">{testimonials[activeTestimonial].company}</span>
-                  </span>
-                </div>
-
-                <div className="flex space-x-2">
-                  <button 
-                    onClick={prevTestimonial}
-                    className="p-2.5 rounded-lg border border-white/10 hover:border-electric bg-white/5 hover:bg-electric text-white transition-colors focus:outline-none"
-                    aria-label="Previous testimonial"
-                  >
-                    <ChevronLeft className="w-5 h-5" />
-                  </button>
-                  <button 
-                    onClick={nextTestimonial}
-                    className="p-2.5 rounded-lg border border-white/10 hover:border-electric bg-white/5 hover:bg-electric text-white transition-colors focus:outline-none"
-                    aria-label="Next testimonial"
-                  >
-                    <ChevronRight className="w-5 h-5" />
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* CTA Banner */}
       <section className="py-20 bg-electric text-white relative overflow-hidden">

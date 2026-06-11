@@ -11,7 +11,7 @@ export default function Footer({ setCurrentPage }) {
 
   const handleNewsletterSubmit = (e) => {
     e.preventDefault()
-    alert('Thank you for subscribing to the Circuit Sphere newsletter!')
+    alert('Thank you for subscribing to the CircuitSphere Solutions newsletter!')
     e.target.reset()
   }
 
@@ -22,15 +22,25 @@ export default function Footer({ setCurrentPage }) {
           {/* Brand Info */}
           <div className="space-y-6">
             <div className="flex items-center space-x-2 cursor-pointer" onClick={() => handleLinkClick('home')}>
-              <div className="flex items-center justify-center w-8 h-8 rounded bg-electric/10 border border-electric/30">
-                <Cpu className="w-4 h-4 text-electric" />
+              <div className="flex items-center justify-center w-8 h-8 rounded-full bg-navy border border-electric/30 overflow-hidden">
+                <svg viewBox="0 0 100 100" className="w-6 h-6 text-white fill-none">
+                  <circle cx="50" cy="50" r="46" fill="#0A1F44" />
+                  <path d="M 25 35 H 45 L 60 50 H 80" stroke="#2D7FF9" strokeWidth="4" strokeLinecap="round" />
+                  <path d="M 20 50 H 40 L 55 65 H 75" stroke="#60A5FA" strokeWidth="4" strokeLinecap="round" />
+                  <path d="M 30 65 H 50 L 65 50" stroke="#2D7FF9" strokeWidth="4" strokeLinecap="round" />
+                  <circle cx="45" cy="35" r="5" fill="#2D7FF9" />
+                  <circle cx="60" cy="50" r="5" fill="#60A5FA" />
+                  <circle cx="80" cy="50" r="5" fill="#2D7FF9" />
+                  <circle cx="40" cy="50" r="5" fill="#60A5FA" />
+                  <circle cx="55" cy="65" r="5" fill="#2D7FF9" />
+                </svg>
               </div>
               <span className="text-lg font-bold tracking-tight text-white">
-                Circuit<span className="text-electric">Sphere</span>
+                CircuitSphere <span className="text-electric">Solutions</span>
               </span>
             </div>
             <p className="text-sm leading-relaxed">
-              Circuit Sphere is a premier Managed Service Provider (MSP) and contingent workforce consulting firm powering Fortune 500 enterprises with elite tech, operational, and consulting talent.
+              CircuitSphere Solutions is a premier Managed Service Provider (MSP) and contingent workforce consulting firm powering enterprises with elite tech, operational, and consulting talent.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="hover:text-electric transition-colors p-2 bg-white/5 rounded-full" aria-label="LinkedIn">
@@ -54,9 +64,6 @@ export default function Footer({ setCurrentPage }) {
               </li>
               <li>
                 <button onClick={() => handleLinkClick('about')} className="hover:text-white transition-colors">About Us</button>
-              </li>
-              <li>
-                <button onClick={() => handleLinkClick('industries')} className="hover:text-white transition-colors">Industries We Serve</button>
               </li>
               <li>
                 <button onClick={() => handleLinkClick('careers')} className="hover:text-white transition-colors">Join Talent Pool</button>
@@ -105,24 +112,24 @@ export default function Footer({ setCurrentPage }) {
               </button>
             </form>
             <div className="space-y-3 pt-2 text-sm">
-              <div className="flex items-center space-x-3">
-                <MapPin className="w-4 h-4 text-electric shrink-0" />
-                <span>100 Wall Street, Floor 21, New York, NY 10005</span>
+              <div className="flex items-start space-x-3">
+                <MapPin className="w-4 h-4 text-electric shrink-0 mt-1" />
+                <span>39/c, 3rd cross, 3rd Block, Vishwapriya Layout, Begur road, Bangalore 560068</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-4 h-4 text-electric shrink-0" />
-                <span>+1 (800) 555-0199</span>
+                <span>+91 9880724290</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 text-electric shrink-0" />
-                <span>partner@circuitsphere.com</span>
+                <span>contact@circuitsphere.in</span>
               </div>
             </div>
           </div>
         </div>
 
         <div className="mt-16 pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between text-xs space-y-4 sm:space-y-0">
-          <p>&copy; {currentYear} Circuit Sphere LLC. All rights reserved.</p>
+          <p>&copy; {currentYear} CircuitSphere Solutions. All rights reserved.</p>
           <div className="flex space-x-6">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-white transition-colors">Terms of Service</a>

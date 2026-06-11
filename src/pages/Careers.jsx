@@ -32,32 +32,18 @@ export default function Careers() {
 
   const hotJobs = [
     {
-      title: 'Senior React / TypeScript Developer',
-      type: 'Contract (12 Months)',
-      location: 'Remote (US)',
-      salary: '$85 - $100 / hr',
-      posted: '2 days ago'
+      title: 'Recruiter',
+      type: 'Full-Time',
+      location: 'Bangalore (On-Site)',
+      salary: '2 Years Exp',
+      posted: 'Just now'
     },
     {
-      title: 'Regulatory Risk Auditor',
-      type: 'Contract-to-Hire',
-      location: 'New York, NY (Hybrid)',
-      salary: '$90,000 - $115,000 / yr',
-      posted: '1 week ago'
-    },
-    {
-      title: 'RF Network Engineer (5G)',
-      type: 'Contract (6 Months)',
-      location: 'Dallas, TX (On-Site)',
-      salary: '$70 - $85 / hr',
-      posted: '3 days ago'
-    },
-    {
-      title: 'Clinical Research Associate',
-      type: 'Permanent Direct Hire',
-      location: 'Boston, MA (Hybrid)',
-      salary: '$110,000 - $130,000 / yr',
-      posted: '5 days ago'
+      title: 'Senior Recruiter',
+      type: 'Full-Time',
+      location: 'Bangalore (On-Site)',
+      salary: '5+ Years Exp',
+      posted: 'Just now'
     }
   ]
 

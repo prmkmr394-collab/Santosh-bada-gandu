@@ -8,7 +8,6 @@ export default function Navbar({ currentPage, setCurrentPage }) {
     { label: 'Home', value: 'home' },
     { label: 'Services', value: 'services' },
     { label: 'About', value: 'about' },
-    { label: 'Industries', value: 'industries' },
     { label: 'Careers', value: 'careers' }
   ]
 
@@ -26,12 +25,22 @@ export default function Navbar({ currentPage, setCurrentPage }) {
             onClick={() => handleNavClick('home')} 
             className="flex items-center space-x-2 cursor-pointer group"
           >
-            <div className="relative flex items-center justify-center w-10 h-10 rounded-lg bg-electric/10 border border-electric/30 group-hover:border-electric transition-colors">
-              <Cpu className="w-5 h-5 text-electric group-hover:rotate-12 transition-transform duration-300" />
-              <div className="absolute inset-0 rounded-lg bg-electric/20 blur opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div className="relative flex items-center justify-center w-10 h-10 rounded-full bg-navy border border-electric/30 overflow-hidden shadow-inner group-hover:border-electric transition-colors">
+              <svg viewBox="0 0 100 100" className="w-8 h-8 text-white fill-none">
+                <circle cx="50" cy="50" r="46" fill="#0A1F44" />
+                <path d="M 25 35 H 45 L 60 50 H 80" stroke="#2D7FF9" strokeWidth="4" strokeLinecap="round" />
+                <path d="M 20 50 H 40 L 55 65 H 75" stroke="#60A5FA" strokeWidth="4" strokeLinecap="round" />
+                <path d="M 30 65 H 50 L 65 50" stroke="#2D7FF9" strokeWidth="4" strokeLinecap="round" />
+                <circle cx="45" cy="35" r="5" fill="#2D7FF9" />
+                <circle cx="60" cy="50" r="5" fill="#60A5FA" />
+                <circle cx="80" cy="50" r="5" fill="#2D7FF9" />
+                <circle cx="40" cy="50" r="5" fill="#60A5FA" />
+                <circle cx="55" cy="65" r="5" fill="#2D7FF9" />
+              </svg>
+              <div className="absolute inset-0 rounded-full bg-electric/10 blur opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
             <span className="text-xl font-bold tracking-tight text-white font-sans">
-              Circuit<span className="text-electric">Sphere</span>
+              CircuitSphere <span className="text-electric">Solutions</span>
             </span>
           </div>
 
